@@ -1,0 +1,183 @@
+.game {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between
+};
+
+.game_playGround, .game_score {
+  height: 100%;
+}
+
+.game_playGround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 376px);
+  background-color: #F5F5F7;
+  padding: 133px 80px 122px;
+}
+
+#toggle_menu {
+  display: none;
+}
+
+.game_menuToggle {
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 14px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.game_menuToggle span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1c1c21;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+}
+
+.game_menuToggle span::before, .game_menuToggle span:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1c1c21;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+}
+
+.game_menuToggle span::before {
+  content: "";
+  top: -6px;
+}
+
+.game_menuToggle span::after {
+  content: "";
+  top: 6px;
+}
+
+#toggle_menu:checked~.game_menuToggle span {
+  transform: rotate(45deg);
+}
+
+#toggle_menu:checked~.game_menuToggle span:before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#toggle_menu:checked~.game_menuToggle span:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.game_score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 376px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.game_question {
+  font-size: 32px;
+  max-width: 625px;
+}
+
+.game_answers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  max-width: 850px;
+}
+
+@media screen and (max-width: 1336px) { 
+  .game_answers {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .game_answers {
+    flex-direction: column;
+  }
+
+  .game_playGround {
+    padding: 133px 0 60px;
+    width: 100%;
+  }
+
+  .game_question {
+    padding: 0 40px;
+    font-size: 26px;
+  }
+
+  .game_answers {
+    padding: 0;
+  }
+
+  .game_menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .game_menuToggle {
+    display: flex;
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 4;
+  }
+
+  #toggle_menu:checked~.game_score {
+    right: 0;
+    visibility: visible;
+  }
+
+  .game_score {
+    position: fixed;
+    right: -100%;
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    background-color: #F5F5F7;
+    z-index: 3;
+    transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .game_question {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .game_playGround {
+    padding: 133px 0 24px;
+  }
+}
+
+

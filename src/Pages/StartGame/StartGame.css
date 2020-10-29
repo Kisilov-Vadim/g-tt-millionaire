@@ -1,0 +1,69 @@
+.startGame { 
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startGame_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  background-color: #FFF3EB;
+}
+
+.startGame_main {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 75px;
+}
+
+.startGame_logo img {
+  width: 100%;
+}
+
+.startGame_control {
+  margin-left: 35px;
+}
+
+.startGame_control h1 {
+  font-size: 56px;
+  margin-bottom: 64px;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 999px) {
+  .startGame_main {
+    flex-direction: column;
+  }
+
+  .startGame_control {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .startGame_control h1 {
+    text-align: center;
+    margin-bottom: 102px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .startGame_control h1 {
+    font-size: 32px;
+    padding: 0 5px;
+  }
+
+  .startGame_main {
+    padding: 0 16px;
+  }
+}

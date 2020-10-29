@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
+import { setQuestions } from "./store/actions";
+import config from "./Config.json";
 
-function App() {
+// components
+import StartGame from "./Pages/StartGame/StartGame";
+import Game from "./Pages/Game/Game";
+import Result from "./Pages/Result/Result";
+
+export default function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setQuestions(config.questions));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/" exact>
+          <StartGame title="Who wants to be a millionaire?" />
+        </Route>
+        <Route path="/game" exact>
+          <Game />
+        </Route>
+        <Route path="/result" exact>
+          <Result />
+        </Route>
+      </Switch>
     </div>
   );
 }
-
-export default App;

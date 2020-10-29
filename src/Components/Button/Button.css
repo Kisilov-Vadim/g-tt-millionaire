@@ -1,0 +1,43 @@
+.mainButton {
+  background-color: #FF8B37;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  width: 296px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
+
+.mainButton:hover {
+  background-color: #FFAC70;
+}
+
+.mainButton:active {
+  background-color: #E87928;
+}
+
+@media screen and (max-width: 999px) {
+  .mainButton {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mainButton {
+    height: 48px;
+  }
+}

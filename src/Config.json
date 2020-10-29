@@ -1,0 +1,380 @@
+{
+  "prices": [
+    "$500",
+    "$1,000",
+    "$2,000",
+    "$4,000",
+    "$8,000",
+    "$16,000",
+    "$32,000",
+    "$64,000",
+    "$125,000",
+    "$250,000",
+    "$500,000",
+    "$1,000,000"
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "How many seconds are in a minute?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "30"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "1"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "60"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "300"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "What makeup product makes eyelashes appear longer?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Mascara"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Blush"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Foundation"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Lipstick"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": "What city contains the Eiffel Tower?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Sydney"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Las Angeles"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "New York City"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Paris"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Which sport is also known as football?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Soccer"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Basketball"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Baseball"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Cricket"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "question": "How many continents are there?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "1"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "3"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "7"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "20"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Who wasn't a member of the Beatles?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "John Lennon"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Paul McCartney"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Ringo Star"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Justin Timberlake"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Which of the following is not a type of pasta?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Spaghetti"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Escargot"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Fettuccine"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Ziti"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Which state has cities named San Francisco and Hollywood?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "California"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Utah"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Hawaii"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Montana"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Which instrument does not have strings?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Guitar"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Bass"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Trombone"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Cello"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "question": "What product does Tesla produce?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Ice cream"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Televisions"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Hair brushes"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Electric cars"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Which animal is not a primate?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Chimpanzee"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Dolphin"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Gorillla"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Orangutan"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "question": "What gas makes voices sound higher when inhaled?",
+      "answers": [
+        {
+          "id": "1",
+          "letter": "A",
+          "answer": "Oxygen"
+        },
+        {
+          "id": "2",
+          "letter": "B",
+          "answer": "Nitrogen"
+        },
+        {
+          "id": "3",
+          "letter": "C",
+          "answer": "Sulfur Hexafluoride"
+        },
+        {
+          "id": "4",
+          "letter": "D",
+          "answer": "Helium"
+        }
+      ]
+    }
+  ],
+  "correctAnswers": [
+    {
+      "id": "1",
+      "answer": ["C"]
+    },
+    {
+      "id": "2",
+      "answer": ["A"]
+    },
+    {
+      "id": "3",
+      "answer": ["D"]
+    },
+    {
+      "id": "4",
+      "answer": ["A"]
+    },
+    {
+      "id": "5",
+      "answer": ["C"]
+    },
+    {
+      "id": "6",
+      "answer": ["D"]
+    },
+    {
+      "id": "7",
+      "answer": ["B"]
+    },
+    {
+      "id": "8",
+      "answer": ["A"]
+    },
+    {
+      "id": "9",
+      "answer": ["C"]
+    },
+    {
+      "id": "10",
+      "answer": ["D"]
+    },
+    {
+      "id": "11",
+      "answer": ["B"]
+    },
+    {
+      "id": "12",
+      "answer": ["D"]
+    }
+  ]
+}

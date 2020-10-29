@@ -1,0 +1,78 @@
+.scoreItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 41px;
+  margin-bottom: 8px;
+}
+
+.scoreItem:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: 0;
+  height: 1px;
+  background-color: #D0D0D8;
+  width: 100%;
+  z-index: 0;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
+
+.scoreItem svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.scoreItem svg path {
+  stroke: #D0D0D8;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
+
+.scoreItem span {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
+
+.scoreItem.active:after {
+  background-color: #FF8B37;
+}
+
+.scoreItem.active svg path {
+  stroke: #FF8B37;
+}
+
+.scoreItem.active span {
+  color: #FF8B37;
+}
+
+.scoreItem.earned span {
+  color: #D0D0D8;
+}
+
+@media screen and (max-width: 576px) {
+  .scoreItem {
+    height: 32px;
+  }
+
+  .scoreItem span {
+    font-size: 14px;
+  }
+}

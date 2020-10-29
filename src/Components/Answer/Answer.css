@@ -1,0 +1,125 @@
+.answer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 71px;
+  border-radius: 20px;
+  margin: 16px 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.answer:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: 0;
+  height: 1px;
+  background-color: #D0D0D8;
+  width: 100%;
+  z-index: 0;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  z-index: 0;
+}
+
+.answer.selected:after  {
+  background-color: #FF8B37!important;
+}
+
+.answer.selected svg path {
+  fill: #FFF3EB;
+  stroke: #FF8B37!important;
+}
+
+.answer.correct:after  {
+  background-color: #47D867!important;
+}
+
+.answer.correct svg path {
+  fill: #E6FAEA;
+  stroke: #47D867!important;
+}
+
+.answer.wrong:after  {
+  background-color: #EC6259!important;
+}
+
+.answer.wrong svg path {
+  fill: #FDEEED;
+  stroke: #EC6259;
+}
+
+.answer svg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.answer svg path {
+  stroke: #D0D0D8;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
+
+.answer .answer_info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.answer_letter {
+  color: #FF8B37;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 778px) {
+  .answer:hover:after {
+    background-color: #FF8B37;
+  }
+  
+  .answer:hover svg path {
+    stroke:#FF8B37;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .answer {
+    margin: 4px 0;
+    height: 56px;
+    width: 320px;
+  }
+
+  .answer .answer_info {
+    padding-left: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .answer {
+    width: 100%;
+  }
+}

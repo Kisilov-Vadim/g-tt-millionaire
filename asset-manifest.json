@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/g-tt-millionaire/static/css/main.7fc36bb8.chunk.css",
+    "main.js": "/g-tt-millionaire/static/js/main.9725c39a.chunk.js",
+    "main.js.map": "/g-tt-millionaire/static/js/main.9725c39a.chunk.js.map",
+    "runtime-main.js": "/g-tt-millionaire/static/js/runtime-main.1171bcfe.js",
+    "runtime-main.js.map": "/g-tt-millionaire/static/js/runtime-main.1171bcfe.js.map",
+    "static/js/2.f77100fa.chunk.js": "/g-tt-millionaire/static/js/2.f77100fa.chunk.js",
+    "static/js/2.f77100fa.chunk.js.map": "/g-tt-millionaire/static/js/2.f77100fa.chunk.js.map",
+    "index.html": "/g-tt-millionaire/index.html",
+    "static/css/main.7fc36bb8.chunk.css.map": "/g-tt-millionaire/static/css/main.7fc36bb8.chunk.css.map",
+    "static/js/2.f77100fa.chunk.js.LICENSE.txt": "/g-tt-millionaire/static/js/2.f77100fa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1171bcfe.js",
+    "static/js/2.f77100fa.chunk.js",
+    "static/css/main.7fc36bb8.chunk.css",
+    "static/js/main.9725c39a.chunk.js"
+  ]
+}
